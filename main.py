@@ -47,5 +47,5 @@ def save_data(data):
         collection.insert_one(data[i])
 
 # data = get_movie_by_rating()
-data = get_genre_name()
-save_data(data)
+# data = get_genre_name()
+# save_data(data)

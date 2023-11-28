@@ -8,6 +8,22 @@ import schemaa from "./product.cjs"
 const app = express();
 app.use(express.json());
 
+try{
+    let data = schemaa.find().limit(1);
+    console.log(data)
+}
+catch{
+    console.log("Aldaa!")
+}
+
+
+
+
+
+
+
+
+
 
 // app.get("/", async (request,response)=>{
 //     let data = await schemaa.find();
@@ -26,4 +42,3 @@ app.use(express.json());
 //     .catch((error) =>{
 //         console.log(error);
 //     })
-

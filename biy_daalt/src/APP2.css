@@ -1,0 +1,100 @@
+.mainer
+{
+    background-color: rgb(39, 39, 39);
+    padding: 100px 0px;
+}
+
+.submainer
+{
+    margin: 0px 200px;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.imager
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.imager:hover
+{
+    -webkit-filter: brightness(20%);
+}
+
+.image-container
+{
+    background-color: white;
+    padding: 1px 5px 5px 5px;
+    border-radius: 9px;
+}
+
+.image-container:hover
+{
+    background-color: #6ac045;
+}
+
+.itemer
+{
+    display: ralative;
+    position: relative;
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.titler
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoer
+{
+    position: absolute;
+    width: 40%;
+    top: 15px;
+    left: 30%;
+}
+
+.ratinger
+{
+    position: absolute;
+    width: 40%;
+    top: 70px;
+    left: 30%;
+    color: white;
+}
+
+.genrer
+{
+    position: absolute;
+    width: 40%;
+    top: 120px;
+    left: 30%;
+    color: white;
+}
+
+.image-container:hover + .invinsible
+{
+    display: block;
+}
+
+.invinsible
+{
+    display: none;
+}
+
+.invinsible:hover
+{
+    display: block;
+}

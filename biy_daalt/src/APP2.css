@@ -25,21 +25,11 @@
     border-radius: 5px;
 }
 
-.imager:hover
-{
-    -webkit-filter: brightness(20%);
-}
-
 .image-container
 {
     background-color: white;
     padding: 1px 5px 5px 5px;
     border-radius: 9px;
-}
-
-.image-container:hover
-{
-    background-color: #6ac045;
 }
 
 .itemer
@@ -84,7 +74,7 @@
     color: white;
 }
 
-.image-container:hover + .invinsible
+.itemer:hover .invinsible
 {
     display: block;
 }
@@ -97,4 +87,14 @@
 .invinsible:hover
 {
     display: block;
+}
+
+.imager:hover
+{
+    -webkit-filter: brightness(20%);
+}
+
+.image-container:hover
+{
+    background-color: #6ac045;
 }

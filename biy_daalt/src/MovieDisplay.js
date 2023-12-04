@@ -5,16 +5,15 @@ import Footer from './components/footer';
 import React, {Component} from 'react';
 import Main from "./components/Main"
 
-class App extends Component{
+class MovieDisplay extends Component{
   
   render(){
     return (
     <div>
       <Navbar></Navbar>
-      <Main></Main>
       <Footer></Footer>
     </div>
   );}
 }
 
-export default App;
+export default MovieDisplay;

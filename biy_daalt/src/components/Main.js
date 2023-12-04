@@ -23,7 +23,7 @@ const Main = () => {
         {
           const updatedData = result.map(item => ({
             ...item,
-            Local_URL: `/${item.id}`,
+            Local_URL: `/movies/${item.id}`,
             fullImageUrl: `https://image.tmdb.org/t/p/original${item.poster_path}`,
             rDate: item.release_date.substring(0,4),
             rating: item.vote_average.toFixed(1),

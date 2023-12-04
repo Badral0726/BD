@@ -3,6 +3,7 @@ import { PORT, mongoDBURL, mongoDBURLL } from "./config.js";
 import mongoose, { SchemaType } from "mongoose";
 import {MongoClient} from "mongodb";
 import movie from "./product.cjs";
+import genre from "./genre.cjs"
 import cors from "cors";
 // const schemaa = require("./product.cjs")
 
@@ -23,6 +24,22 @@ db.once('open', () => {
 app.get("/data", async (req,res)=>{
     try{
         var data = await movie.find({}).limit(20);
+        // data = JSON.stringify(data,null,4)
+        // console.log(data)
+        res.json(data)
+        // movie.find()
+        // .then(data => res.json(data))
+        // .catch(err => res.json(err))
+    }
+    catch (error){
+        console.log(error);
+        res.status(500).send("server side error"+error)
+    }
+})
+
+app.get("/genre", async (req,res)=>{
+    try{
+        var data = await genre.find({});
         // data = JSON.stringify(data,null,4)
         // console.log(data)
         res.json(data)

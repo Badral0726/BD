@@ -15,8 +15,8 @@
 
 :root
 {
-  --base-color:rgb(39, 39, 39);
-  --border-color: #2c2c2c;
+  --base-color:#1d1d1d;
+  --border-color: 171717;
 }
 .App-header {
   background-color: #282c34;
@@ -101,7 +101,7 @@ img
 .footer
 {
   display: flex;
-  position: fixed;
+  position: relative;
   height: 30vh;
   width: 100%;
   bottom: 0;

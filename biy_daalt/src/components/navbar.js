@@ -6,7 +6,7 @@ function Navbar()
         <div className="navbar">
             <div className="flex logo">
                 <a href="/">
-                    <img src={logo}/>
+                    <img src={logo} alt="logo"/>
                 </a>
             </div>
             <div className="flex search">

@@ -2,7 +2,7 @@ import fb from "./fb.png";
 import ig from "./ig.png";
 import x from "./x.svg";
 import github from "./github.png";
-import React, { Component } from 'react'
+import React from 'react'
 
 
 function Footer()

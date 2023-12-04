@@ -1,4 +1,5 @@
 import './App.css';
+import "./APP2.css"
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import React, {Component} from 'react';
@@ -9,9 +10,9 @@ class App extends Component{
   render(){
     return (
     <div>
-      {/* <Navbar></Navbar> */}
-      <Main/>
-      {/* <Footer></Footer> */}
+      <Navbar></Navbar>
+      <Main></Main>
+      <Footer></Footer>
     </div>
   );}
 }

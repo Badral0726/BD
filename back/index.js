@@ -22,7 +22,7 @@ db.once('open', () => {
 
 app.get("/data", async (req,res)=>{
     try{
-        var data = await movie.find({}).limit(1);
+        var data = await movie.find({}).limit(20);
         // data = JSON.stringify(data,null,4)
         // console.log(data)
         res.json(data)

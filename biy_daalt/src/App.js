@@ -9,9 +9,9 @@ class App extends Component{
   render(){
     return (
     <div>
-      <Navbar></Navbar>
-      <Main></Main>
-      <Footer></Footer>
+      {/* <Navbar></Navbar> */}
+      <Main/>
+      {/* <Footer></Footer> */}
     </div>
   );}
 }

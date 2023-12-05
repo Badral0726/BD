@@ -33,6 +33,7 @@ const MovieDisplay = () => {
             fullBackUrl: `https://image.tmdb.org/t/p/original${item.backdrop_path}`,
             rDate: item.release_date.substring(0,4),
             rating: item.vote_average.toFixed(1),
+            poop: item.popularity.toFixed(0),
             genreNames: item.genre_ids.map(id => genreMap[id]+" "),
           }));
           setData(updatedData)
@@ -59,7 +60,11 @@ const MovieDisplay = () => {
                 <div className='MovieDetails'>
                   <h1 style={{color:"white"}}>{item.title}</h1>
                   <h3 style={{color:"white"}}>{item.rDate}</h3>
-                  <h3 style={{color:"white"}}>{item.genreNames}</h3>
+                  <h3 style={{color:"white"}}>Language: {item.original_language}</h3>
+                  <h3 style={{color:"white"}}>Popularity: {item.poop} (Popularity on IMDB)</h3>
+                  <h3 style={{color:"white"}}>Rating: {item.rating}/10 (Rating on IMDB)</h3>
+                  <h3 style={{color:"white"}}>Description: </h3>
+                  <h3 style={{color:"white"}}>{item.overview}</h3>
                 </div>
               </div>
             ))}

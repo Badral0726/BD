@@ -39,6 +39,7 @@
     width: 90%;
     text-align: center;
     text-decoration: none;
+    transform: scale(1);
 }
 
 .titler
@@ -74,6 +75,10 @@
     color: white;
 }
 
+.itemer:hover .image-container
+{
+    background-color: #6ac045;
+}
 .itemer:hover .invinsible
 {
     display: block;
@@ -84,17 +89,12 @@
     display: none;
 }
 
-.invinsible:hover
+/* .invinsible:hover
 {
     display: block;
-}
+} */
 
-.imager:hover
+.itemer:hover .imager
 {
     -webkit-filter: brightness(20%);
-}
-
-.image-container:hover
-{
-    background-color: #6ac045;
 }

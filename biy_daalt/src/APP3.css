@@ -1,0 +1,47 @@
+.body{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 61px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust the last value for the darkness level */
+}
+
+.MoviePoster
+{
+    position:absolute;
+    background-color: white;
+    top: 150px;
+    left: 100px;
+    width: 300px;
+    height: 442px;
+    border-radius: 5px;
+}
+
+.PosterContainer
+{
+    position: relative;
+    left: 5px;
+}
+
+.PosterContainer img
+{
+    width: 96.5%;
+    height: 100%;
+}
+
+.MovieDetails
+{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    width: 300px;
+    height: 300px;
+}

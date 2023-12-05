@@ -53,10 +53,13 @@ app.get("/genre", async (req,res)=>{
     }
 })
 
-// movie.find({})
-//   .then(data => {
-//     console.log('Queried data:', data);
-//   })
-//   .catch(err=>{
-//     console.log(err)
-//   })
+app.use("/movies/:ID", async(req,res)=>{
+    try{
+        var data = await movie.find({id:req.params.ID}).exec();
+        res.json(data)
+    }
+    catch (err)
+    {
+        res.status(500).send("server error"+err)
+    }
+})

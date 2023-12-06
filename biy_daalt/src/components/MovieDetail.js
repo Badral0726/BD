@@ -60,6 +60,7 @@ const MovieDisplay = () => {
                 <div className='MovieDetails'>
                   <h1 style={{color:"white"}}>{item.title}</h1>
                   <h3 style={{color:"white"}}>{item.rDate}</h3>
+                  <h3 style={{color:"white"}}>{item.genreNames}</h3>
                   <h3 style={{color:"white"}}>Language: {item.original_language}</h3>
                   <h3 style={{color:"white"}}>Popularity: {item.poop} (Popularity on IMDB)</h3>
                   <h3 style={{color:"white"}}>Rating: {item.rating}/10 (Rating on IMDB)</h3>

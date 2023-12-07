@@ -63,3 +63,15 @@ app.use("/movies/:ID", async(req,res)=>{
         res.status(500).send("server error"+err)
     }
 })
+
+app.use("/search/:ID", async(req,res)=>{
+    try{
+        const ID = req.params.ID
+        var data = await movie.find({ title: { $regex: ID, $options: 'i' } });
+        res.json(data)
+    }
+    catch (err)
+    {
+        res.status(500).send("server error"+err)
+    }
+})

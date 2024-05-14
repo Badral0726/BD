@@ -62,7 +62,7 @@ function Navbar()
                     )}
             </div>
             <ul className="links">
-                <li className="f"><a href="/login">Login</a></li>
+                <li className="f"><a href="/login">Loginhuahwfuh</a></li>
                 <li className="f"><a href="/Reg">Register</a></li>
             </ul>
         </div>

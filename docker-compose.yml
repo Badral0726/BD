@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  web:
+    build: ./biy_daalt
+    ports:
+      - 3000:3000
+    volumes:
+      - ./biy_daalt:/app
+    
+  api:
+    build: ./back
+    ports:
+      - 5000:5000
+    environment:
+      DB_URL: mongodb://db/Web_system
+      WATCHPACK_POLLING: true
+    volumes:
+      - ./back:/app
+    # command: ./wait-for db:27017 && migrate-mongo db && npm start
+    command: ./docker-entrypoint.sh
+  db:
+    image: mongo:7.0.1
+    ports:
+      - 27017:27017
+
+volumes:
+  vidly:
+
+
